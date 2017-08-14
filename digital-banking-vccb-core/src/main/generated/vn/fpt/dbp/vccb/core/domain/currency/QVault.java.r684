@@ -1,0 +1,130 @@
+package vn.fpt.dbp.vccb.core.domain.currency;
+
+import static com.querydsl.core.types.PathMetadataFactory.*;
+
+import com.querydsl.core.types.dsl.*;
+
+import com.querydsl.core.types.PathMetadata;
+import javax.annotation.Generated;
+import com.querydsl.core.types.Path;
+import com.querydsl.core.types.dsl.PathInits;
+
+
+/**
+ * QVault is a Querydsl query type for Vault
+ */
+@Generated("com.querydsl.codegen.EntitySerializer")
+public class QVault extends EntityPathBase<Vault> {
+
+    private static final long serialVersionUID = 1464806460L;
+
+    private static final PathInits INITS = PathInits.DIRECT2;
+
+    public static final QVault vault = new QVault("vault");
+
+    public final vn.fpt.dbp.vccb.core.domain.base.QWorkFlowModel _super;
+
+    // inherited
+    public final vn.fpt.dbp.vccb.core.domain.user.QUser approvedBy;
+
+    //inherited
+    public final DateTimePath<java.util.Date> approvedDate;
+
+    //inherited
+    public final DateTimePath<java.util.Date> assignedDate;
+
+    // inherited
+    public final vn.fpt.dbp.vccb.core.domain.user.QUser assignee;
+
+    public final vn.fpt.dbp.vccb.core.domain.organization.QBranch branch;
+
+    public final StringPath code = createString("code");
+
+    // inherited
+    public final vn.fpt.dbp.vccb.core.domain.user.QUser createdBy;
+
+    //inherited
+    public final DateTimePath<java.util.Date> createdDate;
+
+    public final QCurrency currency;
+
+    //inherited
+    public final DateTimePath<java.util.Date> fromDate;
+
+    //inherited
+    public final NumberPath<Long> id;
+
+    public final StringPath name = createString("name");
+
+    //inherited
+    public final NumberPath<Long> originalId;
+
+    //inherited
+    public final SetPath<vn.fpt.dbp.vccb.core.domain.role.Role, vn.fpt.dbp.vccb.core.domain.role.QRole> potentialAssignees;
+
+    //inherited
+    public final StringPath processDeploymentId;
+
+    //inherited
+    public final NumberPath<Long> processInstanceId;
+
+    //inherited
+    public final StringPath referenceCode;
+
+    public final StringPath status = createString("status");
+
+    //inherited
+    public final NumberPath<Long> taskId;
+
+    public final ListPath<Till, QTill> tills = this.<Till, QTill>createList("tills", Till.class, QTill.class, PathInits.DIRECT2);
+
+    //inherited
+    public final DateTimePath<java.util.Date> toDate;
+
+    public final vn.fpt.dbp.vccb.core.domain.user.QUser user;
+
+    //inherited
+    public final StringPath workflowStatus;
+
+    public QVault(String variable) {
+        this(Vault.class, forVariable(variable), INITS);
+    }
+
+    public QVault(Path<? extends Vault> path) {
+        this(path.getType(), path.getMetadata(), path.getMetadata().isRoot() ? INITS : PathInits.DEFAULT);
+    }
+
+    public QVault(PathMetadata metadata) {
+        this(metadata, metadata.isRoot() ? INITS : PathInits.DEFAULT);
+    }
+
+    public QVault(PathMetadata metadata, PathInits inits) {
+        this(Vault.class, metadata, inits);
+    }
+
+    public QVault(Class<? extends Vault> type, PathMetadata metadata, PathInits inits) {
+        super(type, metadata, inits);
+        this._super = new vn.fpt.dbp.vccb.core.domain.base.QWorkFlowModel(type, metadata, inits);
+        this.approvedBy = _super.approvedBy;
+        this.approvedDate = _super.approvedDate;
+        this.assignedDate = _super.assignedDate;
+        this.assignee = _super.assignee;
+        this.branch = inits.isInitialized("branch") ? new vn.fpt.dbp.vccb.core.domain.organization.QBranch(forProperty("branch")) : null;
+        this.createdBy = _super.createdBy;
+        this.createdDate = _super.createdDate;
+        this.currency = inits.isInitialized("currency") ? new QCurrency(forProperty("currency")) : null;
+        this.fromDate = _super.fromDate;
+        this.id = _super.id;
+        this.originalId = _super.originalId;
+        this.potentialAssignees = _super.potentialAssignees;
+        this.processDeploymentId = _super.processDeploymentId;
+        this.processInstanceId = _super.processInstanceId;
+        this.referenceCode = _super.referenceCode;
+        this.taskId = _super.taskId;
+        this.toDate = _super.toDate;
+        this.user = inits.isInitialized("user") ? new vn.fpt.dbp.vccb.core.domain.user.QUser(forProperty("user"), inits.get("user")) : null;
+        this.workflowStatus = _super.workflowStatus;
+    }
+
+}
+

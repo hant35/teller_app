@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>vn.fpt.dbp</groupId>
+  <artifactId>digital-banking-vccb</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>digital-banking-vccb</name>
+  <modules>
+    <module>digital-banking-vccb-core</module>
+    <module>digital-banking-vccb-service-user</module>
+    <module>digital-banking-vccb-service-admin</module>
+    <module>digital-banking-vccb-service-param</module>
+    <module>digital-banking-vccb-service-system</module>
+    <module>digital-banking-vccb-service-cif</module>
+    <module>digital-banking-vccb-service-reference</module>
+  </modules>
+</project>

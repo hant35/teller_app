@@ -1,0 +1,5 @@
+vn\fpt\dbp\vccb\service\system\configuration\AxonConfiguration.class
+vn\fpt\dbp\vccb\service\system\configuration\WebConfiguration.class
+vn\fpt\dbp\vccb\service\system\rest\DataTableController.class
+vn\fpt\dbp\vccb\service\system\rest\StatusCodeController.class
+vn\fpt\dbp\vccb\service\system\Application.class

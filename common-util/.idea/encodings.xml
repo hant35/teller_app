@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../digital-banking-vccb-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../digital-banking-vccb-service-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../digital-banking-vccb-service-cif" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../digital-banking-vccb-service-param" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../digital-banking-vccb-service-reference" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../digital-banking-vccb-service-system" charset="UTF-8" />
+  </component>
+</project>

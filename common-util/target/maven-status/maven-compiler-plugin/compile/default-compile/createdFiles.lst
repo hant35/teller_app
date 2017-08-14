@@ -1,0 +1,17 @@
+vn\fpt\util\json\NoDeduplicateIdDeserializationContext.class
+vn\fpt\util\rest\PagedResource.class
+vn\fpt\util\rest\DBPRestTemplateFactory$1.class
+vn\fpt\util\rest\RestClient$1.class
+vn\fpt\util\json\JsonIntDeserializer.class
+vn\fpt\util\json\JsonDoubleDeserializer.class
+vn\fpt\util\NullAwareBeanUtilsBean.class
+vn\fpt\util\json\DateConverter$Serialize.class
+vn\fpt\util\number\NumberToWords.class
+vn\fpt\util\rest\RestClient.class
+vn\fpt\util\json\DateConverter.class
+vn\fpt\util\json\JsonFloatDeserializer.class
+vn\fpt\util\json\DBPConfiguration.class
+vn\fpt\util\rest\DBPRestTemplateFactory.class
+vn\fpt\util\rest\RestResponse.class
+vn\fpt\util\json\DateConverter$Deserialize.class
+vn\fpt\util\rest\RestParameter.class

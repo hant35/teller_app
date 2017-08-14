@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../digital-banking-vccb-core/pom.xml" />
+        <option value="$PROJECT_DIR$/../digital-banking-vccb-service-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/../digital-banking-vccb-service-param/pom.xml" />
+        <option value="$PROJECT_DIR$/../digital-banking-vccb-service-cif/pom.xml" />
+        <option value="$PROJECT_DIR$/../vccb-osb/pom.xml" />
+        <option value="$PROJECT_DIR$/../digital-banking-vccb-service-reference/pom.xml" />
+        <option value="$PROJECT_DIR$/../digital-banking-vccb-service-system/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://svn.hcm.fis.vn/svn/BANK_VCCB_TELLER_APP_2016/WIP/03.Program/JavaSource/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../digital-banking-vccb-core">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://svn.hcm.fis.vn/svn/BANK_VCCB_TELLER_APP_2016/WIP/03.Program/JavaSource/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../digital-banking-vccb-service-admin">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://svn.hcm.fis.vn/svn/BANK_VCCB_TELLER_APP_2016/WIP/03.Program/JavaSource/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../digital-banking-vccb-service-cif">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://svn.hcm.fis.vn/svn/BANK_VCCB_TELLER_APP_2016/WIP/03.Program/JavaSource/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../digital-banking-vccb-service-param">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://svn.hcm.fis.vn/svn/BANK_VCCB_TELLER_APP_2016/WIP/03.Program/JavaSource/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../digital-banking-vccb-service-reference">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://svn.hcm.fis.vn/svn/BANK_VCCB_TELLER_APP_2016/WIP/03.Program/JavaSource/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../digital-banking-vccb-service-system">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://svn.hcm.fis.vn/svn/BANK_VCCB_TELLER_APP_2016/WIP/03.Program/JavaSource/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../vccb-osb">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://svn.hcm.fis.vn/svn/BANK_VCCB_TELLER_APP_2016/WIP/03.Program/JavaSource/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

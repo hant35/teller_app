@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-util" />
+        <module name="digital-banking-vccb-core" />
+        <module name="digital-banking-vccb-service-admin" />
+        <module name="digital-banking-vccb-service-cif" />
+        <module name="digital-banking-vccb-service-param" />
+        <module name="digital-banking-vccb-service-reference" />
+        <module name="digital-banking-vccb-service-system" />
+        <module name="vccb-osb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.7">
+      <module name="common-util" target="1.5" />
+      <module name="digital-banking-vccb-core" target="1.5" />
+      <module name="digital-banking-vccb-service-admin" target="1.5" />
+      <module name="digital-banking-vccb-service-cif" target="1.5" />
+      <module name="digital-banking-vccb-service-param" target="1.5" />
+      <module name="digital-banking-vccb-service-reference" target="1.5" />
+      <module name="digital-banking-vccb-service-system" target="1.5" />
+      <module name="vccb-osb" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

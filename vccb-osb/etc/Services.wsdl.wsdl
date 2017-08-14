@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions name="XMLWSDLDefinitions" targetNamespace="http://www.alsb.com/" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.alsb.com/" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.alsb.com/" xmlns:alsb="http://www.alsb.com/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mimee/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:typens="http://www.alsb.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <!--CoreUserLogin-->
+      <xsd:element name="CoreUserLogin">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Username" type="xsd:string"/>
+            <xsd:element name="Password" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CoreUserLoginResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ErrorCode" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <!--CoreUserChangePassword-->
+      <xsd:element name="CoreUserChangePassword">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Username" type="xsd:string"/>
+            <xsd:element name="Password" type="xsd:string"/>
+            <xsd:element name="NewPassword" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CoreUserChangePasswordResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ErrorCode" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <!--CoreUserResetPassword-->
+      <xsd:element name="CoreUserResetPassword">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Username" type="xsd:string"/>
+            <xsd:element name="NewPassword" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CoreUserResetPasswordResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ErrorCode" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <!--CoreUserCreate-->
+      <xsd:element name="CoreUserCreate">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Username" type="xsd:string"/>
+            <xsd:element name="Password" type="xsd:string"/>
+            <xsd:element name="Name" type="xsd:string"/>
+            <xsd:element name="CustomerNo" type="xsd:string"/>
+            <xsd:element name="UserID" type="xsd:string"/>
+            <xsd:element name="BRn" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CoreUserCreateResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ErrorCode" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <!--CoreUsernameVerify-->
+      <xsd:element name="CoreUsernameVerify">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Username" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CoreUsernameVerifyResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ErrorCode" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <!--LDAPUserSearch-->
+      <xsd:element name="LDAPUserSearch">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="UserID" type="xsd:string"/>
+            <xsd:element name="Name" type="xsd:string"/>
+            <xsd:element name="Username" type="xsd:string"/>
+            <xsd:element name="Email" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="LDAPUserSearchResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="UserList" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="LDAPUserSearchSoapIn">
+    <WL5G3N0:part element="WL5G3N1:LDAPUserSearch" name="FML32"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="LDAPUserSearchSoapOut">
+    <WL5G3N0:part element="WL5G3N1:LDAPUserSearchResponse" name="FML32"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CoreUsernameVerifySoapIn">
+    <WL5G3N0:part element="WL5G3N1:CoreUsernameVerify" name="FML32"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CoreUsernameVerifySoapOut">
+    <WL5G3N0:part element="WL5G3N1:CoreUsernameVerifyResponse" name="FML32"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CoreUserCreateSoapIn">
+    <WL5G3N0:part element="WL5G3N1:CoreUserCreate" name="FML32"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CoreUserCreateSoapOut">
+    <WL5G3N0:part element="WL5G3N1:CoreUserCreateResponse" name="FML32"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CoreUserResetPasswordSoapIn">
+    <WL5G3N0:part element="WL5G3N1:CoreUserResetPassword" name="FML32"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CoreUserResetPasswordSoapOut">
+    <WL5G3N0:part element="WL5G3N1:CoreUserResetPasswordResponse" name="FML32"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CoreUserChangePasswordSoapIn">
+    <WL5G3N0:part element="WL5G3N1:CoreUserChangePassword" name="FML32"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CoreUserChangePasswordSoapOut">
+    <WL5G3N0:part element="WL5G3N1:CoreUserChangePasswordResponse" name="FML32"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CoreUserLoginSoapIn">
+    <WL5G3N0:part element="WL5G3N1:CoreUserLogin" name="FML32"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CoreUserLoginSoapOut">
+    <WL5G3N0:part element="WL5G3N1:CoreUserLoginResponse" name="FML32"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="WebService">
+    <WL5G3N0:operation name="LDAPUserSearch">
+      <WL5G3N0:input message="WL5G3N1:LDAPUserSearchSoapIn"/>
+      <WL5G3N0:output message="WL5G3N1:LDAPUserSearchSoapOut"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CoreUsernameVerify">
+      <WL5G3N0:input message="WL5G3N1:CoreUsernameVerifySoapIn"/>
+      <WL5G3N0:output message="WL5G3N1:CoreUsernameVerifySoapOut"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CoreUserCreate">
+      <WL5G3N0:input message="WL5G3N1:CoreUserCreateSoapIn"/>
+      <WL5G3N0:output message="WL5G3N1:CoreUserCreateSoapOut"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CoreUserResetPassword">
+      <WL5G3N0:input message="WL5G3N1:CoreUserResetPasswordSoapIn"/>
+      <WL5G3N0:output message="WL5G3N1:CoreUserResetPasswordSoapOut"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CoreUserChangePassword">
+      <WL5G3N0:input message="WL5G3N1:CoreUserChangePasswordSoapIn"/>
+      <WL5G3N0:output message="WL5G3N1:CoreUserChangePasswordSoapOut"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CoreUserLogin">
+      <WL5G3N0:input message="WL5G3N1:CoreUserLoginSoapIn"/>
+      <WL5G3N0:output message="WL5G3N1:CoreUserLoginSoapOut"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="WebService" type="WL5G3N1:WebService">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="LDAPUserSearch">
+      <WL5G3N2:operation soapAction="http://www.alsb.com/WebService/LDAPUserSearch" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CoreUsernameVerify">
+      <WL5G3N2:operation soapAction="http://www.alsb.com/WebService/CoreUsernameVerify" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CoreUserCreate">
+      <WL5G3N2:operation soapAction="http://www.alsb.com/WebService/CoreUserCreate" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CoreUserResetPassword">
+      <WL5G3N2:operation soapAction="http://www.alsb.com/WebService/CoreUserResetPassword" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CoreUserChangePassword">
+      <WL5G3N2:operation soapAction="http://www.alsb.com/WebService/CoreUserChangePassword" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CoreUserLogin">
+      <WL5G3N2:operation soapAction="http://www.alsb.com/WebService/CoreUserLogin" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="WebService">
+    <WL5G3N0:port binding="WL5G3N1:WebService" name="WebService">
+      <WL5G3N2:address location="http://test.osb.vietcapitalbank.com.vn/VCCB_TELLER/ProxyServices/TellerApp"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

@@ -1,0 +1,83 @@
+# Spring properties
+dbp:
+  api-gateway-url: http://10.86.202.224
+spring:
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  application:
+    name: digital-banking-vccb-service-reference  # Service registers under this name
+  freemarker:
+    enabled: false           # Ignore Eureka dashboard FreeMarker templates
+  thymeleaf:
+    cache: false             # Allow Thymeleaf templates to be reloaded at runtime
+    prefix: classpath:/accounts-server/templates/    # Trailing / mandatory
+  datasource:
+    url: jdbc:oracle:thin:@172.29.5.80:1521/vccbmis    #jdbc:mysql://10.15.24.158:3306/dbp?useUnicode=yes&characterEncoding=UTF-8
+    username: vccbtellerapp   #root
+    password: vccbtellerapp   #F15.B4nk
+    driver-class-name: oracle.jdbc.OracleDriver    #com.mysql.jdbc.Driver
+    test-while-idle: true
+    test-on-borrow: true
+    validation-query: SELECT 1
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    open-in-view: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: vccbtellerapp
+      
+security:
+  oauth2:
+    client:
+      clientId: client #233995406969458
+      clientSecret: secret #db1f3bf004ff82747c08ae9a2ff0258e
+      accessTokenUri: http://192.168.99.100:1115/as/oauth/token
+      #https://graph.facebook.com/oauth/access_token
+      userAuthorizationUri: http://192.168.99.100:1115/as/oauth/authorize
+      #https://www.facebook.com/dialog/oauth
+      #tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: http://192.168.99.100:1115/as/me #https://graph.facebook.com/me
+      preferTokenInfo: false
+        
+# Map the error path to error template (for Thymeleaf)
+error:
+  path: /error
+
+# HTTP Server
+server:
+  port: ${server.port}   # HTTP (Tomcat) port
+  #contextPath: /reference
+  #ssl:
+    #key-store: /cacerts
+    #key-store-password: changeit
+    #key-password: changeit
+
+---
+spring:
+  profiles: history
+  application:
+    name: digital-banking-vccb-service-reference-his  # Service registers under this name
+  datasource:
+    url: jdbc:oracle:thin:@172.29.5.80:1521/vccbmis    #jdbc:mysql://10.15.24.158:3306/dbp?useUnicode=yes&characterEncoding=UTF-8
+    username: vccbtellerapp_his   #root
+    password: vccbtellerapp_his   #F15.B4nk
+    driver-class-name: oracle.jdbc.OracleDriver    #com.mysql.jdbc.Driver
+    test-while-idle: true
+    test-on-borrow: true
+    validation-query: SELECT 1
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    open-in-view: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: vccbtellerapp_his

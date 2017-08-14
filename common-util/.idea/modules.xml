@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common-util.iml" filepath="$PROJECT_DIR$/common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../digital-banking-vccb-core/digital-banking-vccb-core.iml" filepath="$PROJECT_DIR$/../digital-banking-vccb-core/digital-banking-vccb-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../digital-banking-vccb-service-admin/digital-banking-vccb-service-admin.iml" filepath="$PROJECT_DIR$/../digital-banking-vccb-service-admin/digital-banking-vccb-service-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../digital-banking-vccb-service-cif/digital-banking-vccb-service-cif.iml" filepath="$PROJECT_DIR$/../digital-banking-vccb-service-cif/digital-banking-vccb-service-cif.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../digital-banking-vccb-service-param/digital-banking-vccb-service-param.iml" filepath="$PROJECT_DIR$/../digital-banking-vccb-service-param/digital-banking-vccb-service-param.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../digital-banking-vccb-service-reference/digital-banking-vccb-service-reference.iml" filepath="$PROJECT_DIR$/../digital-banking-vccb-service-reference/digital-banking-vccb-service-reference.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../digital-banking-vccb-service-system/digital-banking-vccb-service-system.iml" filepath="$PROJECT_DIR$/../digital-banking-vccb-service-system/digital-banking-vccb-service-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../vccb-osb/vccb-osb.iml" filepath="$PROJECT_DIR$/../vccb-osb/vccb-osb.iml" />
+    </modules>
+  </component>
+</project>
